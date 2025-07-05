@@ -40,6 +40,8 @@ RUN apt-get update && \
         ca-certificates && \
     rm -rf /var/lib/apt/lists/*
 
+RUN mkdir -p /var/run/sidelb
+
 COPY --from=rust_builder /app/target/release/sidelb /usr/local/bin/sidelb
 COPY docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh
 

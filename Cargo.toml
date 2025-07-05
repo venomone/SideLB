@@ -4,8 +4,8 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-tokio = { version = "1.45.0", features = ["net", "sync", "rt", "macros", "fs"] }
-chrono = "0.4.41"
+tokio = { version = "1.48.0", features = ["net", "sync", "rt", "macros", "fs"] }
+chrono = "0.4.42"
 trust-dns-resolver = "0.23.2"
 
 [profile.release]
