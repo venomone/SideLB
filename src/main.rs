@@ -13,7 +13,7 @@ use modules::utils::{log, print_help, parse_arguments, perform_uds_health_check,
 use tokio::net::{TcpListener, UdpSocket};
 use tokio::time::Duration;
 
-const DEFAULT_UDS_PATH: &str = "/var/run/sidelb.sock";
+const DEFAULT_UDS_PATH: &str = "/var/run/sidelb/sidelb.sock";
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
